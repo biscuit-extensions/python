@@ -1,0 +1,7 @@
+[extension]
+id = "python"
+name = "Python"
+version = "0.1.0"
+description = "Python language support, virtual environment manager, and script runner"
+author = "biscuit-extensions"
+icon = "icon.png"
