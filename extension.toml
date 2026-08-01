@@ -1,7 +1,23 @@
 [extension]
 id = "python"
 name = "Python"
-version = "0.1.0"
-description = "Python language support, virtual environment manager, and script runner"
-author = "biscuit-extensions"
+version = "0.2.0"
+description = "Python interpreter detection, execution runner, pytest discovery and test runner"
+author = "tomlin7"
 icon = "icon.png"
+
+[dependencies]
+python = [
+    "pytest>=8.0.0"
+]
+tools = [
+    "python"
+]
+
+[contributes]
+commands = [
+    { id = "python.run_file", title = "Python: Run Current File" },
+    { id = "python.select_interpreter", title = "Python: Select Interpreter" },
+    { id = "python.discover_tests", title = "Python: Discover Tests" },
+    { id = "python.run_tests", title = "Python: Run All Tests" }
+]
